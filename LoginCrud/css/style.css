@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+	font-family: 'Montserrat';
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos com espaçamento entre eles */
+    align-items: center;
+    height: 100vh; /* Usar 100vh em vez de 100% garante que a altura seja relativa à janela de visualização */
+    padding: 120px; /* Adiciona algum espaçamento nas laterais */
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+    margin: auto;
+}
+
+/* Estilos para o formulário de login */
+body {
+       background: linear-gradient(
+        to left,
+        white 0%,
+          white 60%,
+          #FFF0BA 60%,
+          #FFF0BA 100%
+
+       );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+    
+}
+
+
+.box {
+    max-width: 400px; /* Define uma largura máxima para a .box */
+    width: 100%; /* Faz a .box ocupar todo o espaço disponível */
+	padding: 100px;
+	text-align: center; /* Centraliza o conteúdo dentro da .box */
+    display: flex; /* Adiciona um layout de flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+
+.logo-image {
+    max-width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto;
+    margin-right: 250px; /* Centraliza a imagem na parte esquerda */
+    margin-bottom: 20px; /* Adiciona um espaçamento abaixo da imagem */
+}
+
+/* Estilos para o formulário e os botões */
+.form-group {
+    margin-bottom: 20px; /* Adiciona um espaçamento entre os grupos de formulários */
+	text-align: left;
+}
+
+.form-label {
+    font-size: 14px;
+    display: block;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 2px; /* Adiciona um espaçamento entre os campos de entrada */
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color:  rgb(241, 240, 240);
+    border-radius: 22px;
+    transition: 0.3s;
+	
+}
+
+.input-field:focus {
+    border-color: #9aaae0; 
+    outline: none; 
+}
+
+.submit-button {
+    background-color: #3047ad; 
+    border: none;
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin-bottom: 10px; /* Adiciona um espaçamento abaixo dos botões */
+    cursor: pointer; 
+    border-radius: 18px; 
+    transition: background-color 0.3s; 
+}
+
+.submit-button:hover {
+    background-color: #00026e; 
+}
+
+/* Media query para ajustar o layout em telas menores */
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column; /* Altera para um layout de coluna em telas menores */
+        .body{
+            flex-direction: column;
+        }
+    }
+}

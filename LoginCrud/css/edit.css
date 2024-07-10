@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    background: linear-gradient(
+        to right,
+        white 0%,
+        white 50%,
+        #FFF0BA 50%,
+        #FFF0BA 100%
+    );
+}
+
+header {
+    background-color: #FFF0BA;
+    height: 12%;
+    border-width: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+/* Estilos padrão para o dropdown */
+.dropdown-content {
+    display: none; /* Inicia oculto */
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 2.3vh;
+    border-radius: 18px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c05209;
+    border-radius: 18px;
+}
+
+/* Mostrar o dropdown quando o link Receitas é hover */
+.header:hover #dropdown {
+    display: block;
+}
+
+/* Estilo para o link Receitas */
+.header-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Ajustes para o posicionamento do dropdown */
+.header {
+    position: relative;
+    display: inline-block;
+}
+
+#head {
+    width: 700px;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    padding: 10px ;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 60px;
+    text-align: center;
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+
+/* Estilizando o checkbox */
+.checkbox {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    appearance: none;
+    background-color: rgb(241, 240, 240);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+    margin-top: 1vh;
+  }
+  
+  /* Estilizando o checkbox quando marcado */
+  .checkbox:checked {
+    background-color: rgb(241, 240, 240);
+    border-color: 2px solid #ccc;
+  }
+  
+  /* Estilizando o símbolo de marcação */
+  .checkbox:checked::after {
+    content: '✔';
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2vh;
+  }
+
+.logo {
+    width: 4vw;
+    height: 12vh;
+    cursor: pointer;
+    display: flex;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+}
+
+.logout {
+    width: 5vw;
+    height: 4vh;
+    cursor: pointer;
+    display: flex;
+    object-fit: cover;
+    position: absolute;
+    right: 10px;
+}
+
+.container {
+    display: flex;
+    height: 4vh;
+    align-items: center;
+}
+
+/* Form Group */
+.box{ 
+    margin-left: 35vh;
+   margin-top: 98px;
+   width: 60%;
+}
+
+.imagem{
+         width: 40%;
+        margin-top: 70px;
+        margin-bottom: auto;
+       padding: 20px;
+
+}
+
+.form-group {
+    margin-bottom: auto;
+    width: 270px;
+   
+}
+
+/* Input Field */
+.input-field {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px -32px;
+    box-sizing: border-box;
+    background-color: rgb(241, 240, 240);
+    border: 2px solid #ccc;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+
+/* Input Field Focus */
+.input-field:focus {
+    border-color: #ffbc2a;
+    outline: none;
+}
+
+/* Form Label */
+.form-label {
+    font-size: 16px;
+    margin-bottom: 1px;
+    margin-right: 7vh;
+    display: flexbox;
+    justify-content: center;
+}
+
+/* IMAGEM */
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+
+/* Botão de Submissão */
+.submit-button {
+    background-color: #ffbc2a;
+	border: none;
+	color: white;
+    padding: 9px 60px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 50px;
+    border-radius: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #876604;
+}
+
+/* Botão de Voltar */
+.back-button {
+    background-color: #ffbc2a;
+	border: none;
+	color: white;
+    padding: 9px 60px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 10px;
+    border-radius: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #876604;
+}
+
+/* Botão de Home */
+.home-button{
+    
+    font-size: 2.6vh;
+    position: relative;
+    text-decoration: none;
+   color: black;
+   margin-right: 9vw;
+   border-radius: 18px;
+   padding: 0.7vh;
+}  
+
+.home-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+   
+  }
+
+.home-button:hover {
+    background-color: #c05209;
+    
+}
+
+
+/* Botão de Adicionar */
+.add-button {
+    position: fixed;
+    top: 132px;
+    right: 340px;
+    background-color: #ffbc2a;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #876604;
+}
+
+.button-container{ 
+
+    margin-top: 2vh;
+    margin-left: 25vh;
+}
+
+@media (max-width: 1366px){
+
+    .box{ 
+        margin-left: 35vh;
+       margin-top: 28px;
+       width: 55%;
+    }
+
+    .button-container{ 
+
+        margin-top: 2vh;
+        margin-left: 20vh;
+    }
+    
+    .imagem{
+             width: 45%;
+            margin-top: auto;
+            margin-bottom: auto;
+           padding: 10px;
+    
+    }
+    
+
+}  

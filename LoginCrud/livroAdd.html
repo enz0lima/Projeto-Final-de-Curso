@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>	Adicionar dados</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/edit.css">
+
+	<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+		
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<a href="" class="logo">
+			  <img src="assets/logo.jpg" alt="Logo do site">
+			</a>
+		  <a href="logout.php" class="logout">
+			<img src="assets/logout.png" alt="Sair do site">
+		  </a>
+		  <div class="header">
+			<a href="receitaTable.php" class="home-button">Receitas</a>
+			<div id="dropdown" class="dropdown-content">
+			<a href="medidaTable.php">Medidas</a>      
+			<a href="categoriaTable.php">Categoria</a>
+										</div>
+										</div>
+		  <a href="cargoTable.php" class="home-button">Cargos</a>
+		  <a href="funcTable.php" class="home-button">Funcionários</a> 
+		   <a href="restTable.php" class="home-button">Restaurantes</a>
+           <a href="livroTable.php" class="home-button">Livros</a>
+		   
+	
+	  </header>
+	
+	  <main>
+		</main>
+	
+	<br/><br/>
+              
+	<h2><font size="+3">Incluir Livro</font></h2>
+     <div class="cont"> 
+	<div class="box">
+    <form action="livroBD.php" method="post" name="form1">
+			<div class="form-group">
+				<label for="titulo" class="form-label">Título</label>
+				<input type="text" id="titulo" name="titulo" class="input-field" autocomplete="off" required>
+			</div>
+			<div class="form-group">
+				<label for="edicao" class="form-label">Edição</label>
+				<input type="text" id="edicao" name="edicao" class="input-field" autocomplete="off" required>
+			</div>
+			<div class="form-group">
+				<label for="isbn" class="form-label">ISBN</label>
+				<input type="text" id="isbn" name="isbn" class="input-field" autocomplete="off" maxlength="13" required>
+			</div>
+			
+		</div>
+		<div class="imagem">
+			<img src="assets/logo.jpg" alt="logo">
+		</div>
+		</div>
+			<div class="button-container">
+			<input type="button" value="Voltar" onclick="history.back()" class="back-button">
+			<input type="submit" name="Submit" value="Salvar" class="submit-button">
+			</div>
+			
+		
+	</form>
+
+</body>
+</html>
+

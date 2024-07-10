@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{ 
+
+    background-color: #f7f7f7;
+    font-family: 'Montserrat';
+}
+
+/* Estilos padrão para o dropdown */
+.dropdown-content {
+    display: none; /* Inicia oculto */
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 2.3vh;
+    border-radius: 18px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c05209;
+    border-radius: 18px;
+}
+
+/* Mostrar o dropdown quando o link Receitas é hover */
+.header:hover #dropdown {
+    display: block;
+}
+
+/* Estilo para o link Receitas */
+.header-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Ajustes para o posicionamento do dropdown */
+.header {
+    position: relative;
+    display: inline-block;
+}
+
+#head {
+    width: 700px;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    padding: 10px ;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 60px;
+    text-align: center;
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+header {
+    background-color: #FFF0BA;
+    height: 12%;
+    border-width: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    width: 4vw;
+    height: 12vh;
+    cursor: pointer;
+    display: flex;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+}
+
+.logout {
+    width: 5vw;
+    height: 4vh;
+    cursor: pointer;
+    display: flex;
+    object-fit: cover;
+    position: absolute;
+    right: 10px;
+}
+
+.container {
+    display: flex;
+    height: 4vh;
+    align-items: center;
+}
+
+.home-button{
+    
+    font-size: 2.6vh;
+    position: relative;
+    text-decoration: none;
+   color: black;
+   margin-right: 9vw;
+   border-radius: 18px;
+   padding: 0.7vh;
+}  
+
+.home-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+   
+  }
+
+.home-button:hover {
+    background-color: #c05209;
+    
+}
+
+
+
+
